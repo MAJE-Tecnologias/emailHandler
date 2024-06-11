@@ -1,0 +1,22 @@
+# Arquivos e diretórios gerados automaticamente
+node_modules/
+npm-debug.log
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de dependências locais
+package-lock.json
+
+# Arquivos de build ou diretórios
+/build/
+/dist/
+/out/
+
+# Arquivos de log e outros arquivos temporários
+*.log
+*.tmp
+
+# Arquivos de configuração de IDEs e editores
+.vscode/
+.idea/
