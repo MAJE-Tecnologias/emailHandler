@@ -1,12 +1,15 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const { sendEmail } = require('./api/controller/emailController'); // Corrigido o caminho para importação
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+app.use(cors());
 
 // Middleware para processar JSON
 app.use(bodyParser.json());
